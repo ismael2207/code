@@ -5,7 +5,7 @@
     <meta name="Description" content="Descripción de la web">    <!-- Descripción de la pagina-->
     <meta name="kaywords" content="Palabras claves separadas por copas">    <!-- Palabras claves-->
     <title>Esta es mi primera web</title>    <!-- Titulo de la pagina-->
-    </head> <!-- Fin del HEAD-->
+</head> <!-- Fin del HEAD-->
     <body> <!-- Inicio del BODY-->
         <h1>Introducción</h1>
         <p>Para poder continuación <strong>debes</strong> registrarte</p>
@@ -17,10 +17,13 @@
             <input type="text" id="apellido" name="apellido">
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email">
+            <lavel for="fecha">Fecha</lavel>
+            <input type="dale" id="fecha" name="fecha">
             <button>Registrate</button>
         </fieldset>
         <h2>La siguinte imagen es <em>simplemente</em> magnifica</h2>
-        <img href="https://e7.pngegg.com/pngimages/783/1/png-clipart-google-logo-google-i-o-computer-icons-business-business-text-people.png" alt="es una imagen de google" width="50" height="100">
+        <figuro><img border="1px" title="Titulo de la imagen" alt="Imagen no encontrada" thref="https://e7.pngegg.com/pngimages/783/1/png-clipart-google-logo-google-i-o-computer-icons-business-business-text-people.png" width="50" height="100">
+        <figcaption>Pie de la imagen</figcaption></figuro>
         <h3>A continuación, les mostraremos el listado que tenemos</h3>
         <ol> <!-- Lista ordenada-->
             <li>Lo primero es lo primero</li>
@@ -52,6 +55,128 @@
                 <td>Celda I</td>
             </tr>
         </Table>
-
+        <table border="1">
+            <caption>Tabla con celdas unidas mediante coolspan</caption>
+            <tr>
+                <th>NOMBRE</th>
+                <th>Día 1</th>
+                <th>Día 2</th>
+                <th>Día 3</th>
+                <th>Día 4</th>
+                </tr>
+                <tr>
+                    <th>Mike (Lastimado)</th>
+                    <th colspan="3">0 Km</th>
+                    <td>4 km</td>
+                </tr>
+                <tr>
+                    <th>Susan</th>
+                    <td>23 km</td>
+                    <td>18 km</td>
+                    <td>19 km</td>
+                    <td>15 km</td>
+                </tr>
+        </table>
+        <table border="1">
+        <caption>Tabla con celdas unidas mediente rowspan</caption>
+            <tr>
+                <th>&nbsp;</th> <!-- Celda vacía-->
+                <th>Básico</th>
+                <th>Completo</th>
+            </tr>
+            <tr>
+                <th>Instalación</th>
+                <td rowspan="2">Gratis!</td>
+                <td>$49.99</td>
+            </tr>       
+            <tr>
+                <th>Primer año</th>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <th>Segundo año</th>
+                <th>$9.99</th>
+                <th>$29.99</th>
+            </tr>
+        </table>
+        <h1>Su pedido</h1>
+        <table>
+            <tr>
+                <th scope="col">Nombre producto</th>
+                <th scope="col">Precio unitario</th>
+                <th scope="col">Unidades</th>
+                <th scope="col">Subtotal</th>
+            </tr>
+            <tr>
+                <td>Reproductor MP3 (80GB)</td>
+                <td>192.02</td>
+                <td>1</TD>
+                <td>192.02</td>
+            </tr>
+            <tr>
+                <td>Fundas de colores</td>
+                <td>2.50</td>
+                <td>5</td>
+                <td>12.50</td>
+            </tr>
+            <tr>
+                <td>Reproductor de radio</td>
+                <td>12.99</td>
+                <td>1</td>
+                <td>12.99</td>
+            </tr>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td>-</td>
+                <td>7</td>
+                <td><strong>207.51</strong></td>
+            </tr>
+        </table>
+        <table border="1px">
+            <tr>
+                <th scope="row">Día</th>
+                <th>Hoy</th>
+                <th>Mañana</th>
+                <th>Jueves</th>
+            </tr>
+            <tr>
+                <th>Condición</th>
+                <td>Soleado</td>
+                <td>Mayormente soleado</td>
+                <td>Parcialmente nublado</td>
+            </tr>
+            <tr>
+                <th>Vientos</th>
+                <td>E 13 km/h</td>
+                <td>E 11 km/h</td>
+                <td>S 16 km/h</td>
+            </tr>
+        </table>
+        <fieldset>
+        <legend>Registro completo</legend>
+        <form name="formulario"  enctype="multipart/form-data" id="formulario" methor="get" autocomplete="off"><!-- Nuevo formulario -->
+            Email: <input type="email" name="mail" id="mail">
+            <input type="submit" value="Aceptar"><br><br>
+            Edad: <input type="number" name="edad" id="edad" min="18" max="100">
+            <input type="submit" value="Aceptar"><br><br>
+            Buscar <input type="search" name="buscar" id="buscar"><br><br>
+            URL: <input type="url" name="URL" id="URL"><br><br>
+            EDAD: <input type="number" name="edad" id="edad" min="0" max="100" step="5" placeholder="Introduce edad"><br><br>
+            Rando: <input type="range" min="0" max="100" step="5"><br><br>
+            Fecha: <input type="date" name="fecha" id="fecha"><br><br>
+            Hora: <input type="time" name="hora" id="hora" required><br><br>
+            Código postal: <input pattern="(0-9){5}" placeholder="5 dígitos"><br><br>
+            Fichero adjunto: <input type="file" name="adjunto"/><br><br>
+            <input type="submit" value="Enviar"><br><br> 
+        </form>
+        </fieldset><!-- Fin del formulario -->
+        <form name="formulario" method="get">
+            <datalist id="informacion">
+                <option value="967124879" label="   Telefono 1"></option>
+                <option value="968123473" label="   Telefono 2"></option>
+                <option value="915628381" label="   Telefono 3"></option>
+            </datalist>
+            Telefono: <input type="tel" name="telefono" id="telefono" list="informacion">
+        </form>    
     </body> <!-- Fin del BODY-->
 </html>
