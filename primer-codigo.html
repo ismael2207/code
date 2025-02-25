@@ -9,7 +9,7 @@
 </head> <!-- Fin del HEAD-->
     <body> <!-- Inicio del BODY-->
         <h1>Introducción</h1>
-        <p>Para poder continuación <strong>debes</strong> registrarte</p>
+        <p>Para poder continuación debes registrarte</p>
         <fieldset>
             <legend>Registro</legend>
             <label for="text">Nombre:</label>
@@ -27,7 +27,7 @@
         <figcaption>Pie de la imagen</figcaption></figuro>
         <h3>A continuación, les mostraremos el listado que tenemos</h3>
         <ol> <!-- Lista ordenada-->
-            <li>Lo primero es lo primero</li>
+            <li><span id="nombre">Lo primero es lo primero</span></li>
             <li>Lo segundo es lo segundo</li>
         </ol>
         <ul style="list-style-type:disc"> <!-- Lista no ordenada-->
@@ -179,5 +179,10 @@
             </datalist>
             Telefono: <input type="tel" name="telefono" id="telefono" list="informacion">
         </form>    
+        <div class="container"><!-- Flex container-->
+            <div class="item item-1">1</div><!-- Flex items-->
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
     </body> <!-- Fin del BODY-->
 </html>

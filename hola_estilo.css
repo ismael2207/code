@@ -3,3 +3,30 @@ h1 {
     font-family: "Lucida Grande";
     font-size: 32px;
 } 
+/* aqui van los comentarios */
+@font-face {
+    font-family: 'miFuente';
+    src: url(´Bauhaus.ttf´);
+}
+
+p{
+    font-size: 25px;
+    color: red;
+}
+#nombre {
+    color: blueviolet; 
+}
+.container {
+    background: #CCC;
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.item {
+    background: #777;
+    width: 50%;
+    height: 50px;
+}
